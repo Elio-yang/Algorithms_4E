@@ -1,4 +1,4 @@
-package chapter1second;
+package chapter1part2;
 
 /**
  *
