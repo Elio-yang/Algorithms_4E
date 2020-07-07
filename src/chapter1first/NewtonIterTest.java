@@ -1,4 +1,4 @@
-package Chapter1_1;
+package chapter1first;
 
 import java.util.Scanner;
 
@@ -7,7 +7,9 @@ import java.util.Scanner;
  */
 public class NewtonIterTest {
     public static double sqrt(double a) {
-        if (a < 0) return Double.NaN;
+        if (a < 0) {
+            return Double.NaN;
+        }
         double eps = 1e-15;
         double x = a;
         while (Math.abs(x - a / x) > eps) {

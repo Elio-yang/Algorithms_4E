@@ -1,11 +1,13 @@
-package Chapter1_2;
+package chapter1second;
 
 import edu.princeton.cs.algs4.*;
 
 /**
- * Created by Elio Yang on 2020/7/2.
+ *
+ * @author Elio Yang
+ * @date 2020/7/2
  */
-public class Interval2DTest {
+public class Interval2dTest {
     public static void main(String[] args) {
         double xlo=Double.parseDouble(args[0]);
         double xhi=Double.parseDouble(args[1]);
@@ -13,9 +15,9 @@ public class Interval2DTest {
         double yhi=Double.parseDouble(args[3]);
         int T= Integer.parseInt(args[4]);
 
-        Interval1D xinterval=new Interval1D(xlo,xhi);
-        Interval1D yinterval=new Interval1D(ylo,yhi);
-        Interval2D box=new Interval2D(xinterval,yinterval);
+        Interval1D xInterval=new Interval1D(xlo,xhi);
+        Interval1D yInterval=new Interval1D(ylo,yhi);
+        Interval2D box=new Interval2D(xInterval,yInterval);
         box.draw();
 
         Counter c=new Counter("hits");
@@ -26,7 +28,9 @@ public class Interval2DTest {
             if (box.contains(p)){
                 c.increment();
             }
-            else p.draw();
+            else {
+                p.draw();
+            }
         }
 
         StdOut.println(c);

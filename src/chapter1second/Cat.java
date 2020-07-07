@@ -1,10 +1,12 @@
-package Chapter1_2;
+package chapter1second;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Out;
 
 /**
- * Created by Elio Yang on 2020/7/2.
+ *
+ * @author Elio Yang
+ * @date 2020/7/2
  */
 public class Cat {
     public static void main(String[] args) {

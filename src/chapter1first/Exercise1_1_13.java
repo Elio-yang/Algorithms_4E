@@ -1,4 +1,4 @@
-package Chapter1_1;
+package chapter1first;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
@@ -12,7 +12,7 @@ public class Exercise1_1_13 {
      * @param arr
      * @return
      */
-    public static int[][] TransMatrix(int[][] arr){
+    public static int[][] transMatrix(int[][] arr){
         int M=arr.length;
         int N=arr[0].length;
         int[][] trans =new int[N][M];
@@ -29,7 +29,7 @@ public class Exercise1_1_13 {
      * @param N
      * @return
      */
-    public static int[][] RandomArr(int M,int N){
+    public static int[][] randomArr(int M, int N){
         int[][] arr=new int[M][N];
         for (int i=0;i<M;i++){
             for (int j=0;j<N;j++){
@@ -42,7 +42,7 @@ public class Exercise1_1_13 {
      * Print the matrix
      * @param arr
      */
-    public static void PrintMatrix(int[][] arr){
+    public static void printMatrix(int[][] arr){
         int M=arr.length;
         int N=arr[0].length;
         for (int[] ints : arr) {
@@ -57,11 +57,11 @@ public class Exercise1_1_13 {
      * @param args
      */
     public static void main(String[] args){
-        int[][] arr=RandomArr(10,20);
+        int[][] arr=randomArr(10,20);
         StdOut.println("Before:");
-        PrintMatrix(arr);
+        printMatrix(arr);
         StdOut.println("After:");
-        arr=TransMatrix(arr);
-        PrintMatrix(arr);
+        arr=transMatrix(arr);
+        printMatrix(arr);
     }
 }

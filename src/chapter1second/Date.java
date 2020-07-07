@@ -1,9 +1,9 @@
-package Chapter1_2;
-
-import java.util.Objects;
+package chapter1second;
 
 /**
- * Created by Elio Yang on 2020/7/2.
+ *
+ * @author Elio Yang
+ * @date 2020/7/2
  */
 public class Date {
     private final int month;
@@ -36,8 +36,13 @@ public class Date {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Date)) return false;//instanceof  whether belong to some class
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Date)) {
+            return false;
+        }
+        //instanceof whether belong to some class
         Date date = (Date) o;
         return getMonth() == date.getMonth() &&
                 getDay() == date.getDay() &&

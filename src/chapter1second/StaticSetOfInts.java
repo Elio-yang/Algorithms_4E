@@ -1,13 +1,15 @@
-package Chapter1_2;
+package chapter1second;
 
 import java.util.Arrays;
 
 /**
- * Created by Elio Yang on 2020/7/2.
+ *
+ * @author Elio Yang
+ * @date 2020/7/2
  */
-public class StaticSETofInts {
+public class StaticSetOfInts {
     private int[] a;
-    public StaticSETofInts(int[] arr){
+    public StaticSetOfInts(int[] arr){
         a= new int[arr.length];
         for (int i=0;i<a.length;i++){
             a[i]=arr[i];
@@ -22,9 +24,15 @@ public class StaticSETofInts {
         int hi=a.length-1;
         while (lo<=hi){
             int mid=lo+(hi-lo)/2;
-            if (key<a[mid]) hi=mid-1;
-            else if(key>a[mid]) lo=mid+1;
-            else return mid;
+            if (key<a[mid]) {
+                hi=mid-1;
+            }
+            else if(key>a[mid]) {
+                lo=mid+1;
+            }
+            else {
+                return mid;
+            }
         }
         return -1;
     }

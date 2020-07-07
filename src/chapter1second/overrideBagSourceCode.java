@@ -1,12 +1,14 @@
-package Chapter1_2;
+package chapter1second;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * Created by Elio Yang on 2020/7/3.
+ *
+ * @author Elio Yang
+ * @date 2020/7/3
  */
-public class overrideBag<T> implements Iterable<T> {
+public class overrideBagSourceCode<T> implements Iterable<T> {
     private Node<T> first;
     private int n;
 
@@ -14,7 +16,7 @@ public class overrideBag<T> implements Iterable<T> {
         private T item;
         private Node<T> next;
     }
-    public overrideBag(){
+    public overrideBagSourceCode(){
         first=null;
         n=0;
     }
@@ -25,10 +27,10 @@ public class overrideBag<T> implements Iterable<T> {
         return n;
     }
     public void add(T item){
-        Node<T> oldfirst=first;
+        Node<T> oldFirst=first;
         first=new Node<T>();
         first.item=item;
-        first.next=oldfirst;
+        first.next=oldFirst;
         n++;
     }
 
@@ -46,11 +48,15 @@ public class overrideBag<T> implements Iterable<T> {
         public boolean hasNext() {
             return current!=null;
         }
+        @Override
         public void remove(){
             throw new UnsupportedOperationException();
         }
+        @Override
         public T next(){
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             T item=current.item;
             current=current.next;
             return item;

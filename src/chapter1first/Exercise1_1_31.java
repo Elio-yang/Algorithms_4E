@@ -1,4 +1,4 @@
-package Chapter1_1;
+package chapter1first;
 
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;

@@ -1,9 +1,11 @@
-package Chapter1_2;
+package chapter1second;
 
 
 
 /**
- * Created by Elio Yang on 2020/7/2.
+ *
+ * @author Elio Yang
+ * @date 2020/7/2
  */
 public class DateTest {
     public static void main(String[] args) {
