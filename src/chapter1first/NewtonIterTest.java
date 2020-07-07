@@ -3,7 +3,9 @@ package chapter1first;
 import java.util.Scanner;
 
 /**
- * Created by Elio Yang on 2020/6/29.
+ *
+ * @author Elio Yang
+ * @date 2020/6/29
  */
 public class NewtonIterTest {
     public static double sqrt(double a) {

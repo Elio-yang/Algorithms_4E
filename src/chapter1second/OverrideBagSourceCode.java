@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  * @author Elio Yang
  * @date 2020/7/3
  */
-public class overrideBagSourceCode<T> implements Iterable<T> {
+public class OverrideBagSourceCode<T> implements Iterable<T> {
     private Node<T> first;
     private int n;
 
@@ -16,7 +16,7 @@ public class overrideBagSourceCode<T> implements Iterable<T> {
         private T item;
         private Node<T> next;
     }
-    public overrideBagSourceCode(){
+    public OverrideBagSourceCode(){
         first=null;
         n=0;
     }

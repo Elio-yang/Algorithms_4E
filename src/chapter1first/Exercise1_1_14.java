@@ -3,7 +3,9 @@ package chapter1first;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Created by Elio Yang on 2020/6/30.
+ *
+ * @author Elio Yang
+ * @date 2020/6/30
  */
 public class Exercise1_1_14 {
     /***
