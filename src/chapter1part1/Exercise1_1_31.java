@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdRandom;
 import java.awt.*;
 
 public class Exercise1_1_31 {
-    /***
+    /**
      *
      * @param N number of dots
      * @param p possibility of connecting

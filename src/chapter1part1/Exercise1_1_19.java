@@ -9,11 +9,11 @@ import java.util.Map;
  * Created by Elio Yang on 2020/6/30.
  */
 public class Exercise1_1_19 {
-    /***
+    /**
      * Array Saved to store the calculated results
      */
     private static long[] Saved=new long[100];
-    /***
+    /**
      * Faster method to calculate fibo(N)
      * @param N the index of the number
      * @return the fibo-number
@@ -30,7 +30,7 @@ public class Exercise1_1_19 {
     }
 
     static Map<Integer,Long> hashmap =new HashMap<>();
-    /***
+    /**
      * Using HashMap to store the calculated results
      * @param N the N-th number
      * @return the fibo-number
@@ -49,7 +49,7 @@ public class Exercise1_1_19 {
         }
     }
 
-    /***
+    /**
      * Test
      * @param args command-line argument
      */

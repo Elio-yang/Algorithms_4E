@@ -8,6 +8,10 @@ import java.util.Stack;
  * @date 2020/07/07
  */
 public class DijkstraDoubleStack {
+    /**
+     *
+     * @param args the command line argument
+     */
     public static void main(String[] args) {
         Stack<String> ops = new Stack<>();
         Stack<Double> val = new Stack<>();

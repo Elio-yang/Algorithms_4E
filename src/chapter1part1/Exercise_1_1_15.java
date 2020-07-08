@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Created by Elio Yang on 2020/6/30.
  */
 public class Exercise_1_1_15 {
-    /***
+    /**
      * ans[i]=times of number i occurs in arr
      * @param arr
      * @param M

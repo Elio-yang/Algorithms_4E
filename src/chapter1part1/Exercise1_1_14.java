@@ -8,10 +8,10 @@ import edu.princeton.cs.algs4.StdOut;
  * @date 2020/6/30
  */
 public class Exercise1_1_14 {
-    /***
+    /**
      * return a max value s.t. a<log_2(N)
-     * @param N
-     * @return
+     * @param N the number to be calculated.
+     * @return lg of N
      */
     public static int lg(int N){
         int cnt=0;

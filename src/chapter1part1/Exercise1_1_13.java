@@ -7,7 +7,7 @@ import edu.princeton.cs.algs4.StdRandom;
  * Created by Elio Yang on 2020/6/30.
  */
 public class Exercise1_1_13 {
-    /***
+    /**
      * Transposition of a matrix
      * @param arr
      * @return
@@ -23,7 +23,7 @@ public class Exercise1_1_13 {
         }
         return trans;
     }
-    /***
+    /**
      * Generate random matrix for testing
      * @param M
      * @param N
@@ -38,7 +38,7 @@ public class Exercise1_1_13 {
         }
         return arr;
     }
-    /***
+    /**
      * Print the matrix
      * @param arr
      */
@@ -52,7 +52,7 @@ public class Exercise1_1_13 {
             StdOut.println();
         }
     }
-    /***
+    /**
      *
      * @param args
      */
