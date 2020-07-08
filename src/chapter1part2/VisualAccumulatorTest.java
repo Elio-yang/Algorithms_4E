@@ -15,8 +15,7 @@ public class VisualAccumulatorTest {
     private double total;
     private int n;
 
-    /***
-     *
+    /**
      * @param trials times of experiments
      * @param max max Y scale.
      */
@@ -26,7 +25,7 @@ public class VisualAccumulatorTest {
         StdDraw.setPenRadius(.005);
     }
 
-    /***
+    /**
      * Draw data and average
      * @param val data to be added
      */
