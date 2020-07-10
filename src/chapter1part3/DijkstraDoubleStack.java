@@ -35,7 +35,6 @@ public class DijkstraDoubleStack {
                 String op = ops.pop();
                 double v1 = val.pop();
                 double ans = 0;
-
                      if ("+".equals(op))    { ans = val.pop() + v1;val.push(ans); }
                 else if ("-".equals(op))    { ans = val.pop() - v1;val.push(ans); }
                 else if ("*".equals(op))    { ans = val.pop() * v1;val.push(ans); }
