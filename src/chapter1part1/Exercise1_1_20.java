@@ -33,5 +33,4 @@ public class Exercise1_1_20 {
         StdOut.println(ln(N));
 
     }
-
 }

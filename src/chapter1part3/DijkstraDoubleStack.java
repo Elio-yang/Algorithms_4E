@@ -27,22 +27,22 @@ public class DijkstraDoubleStack {
             String s = StdIn.readString();
                  if ("(".equals(s))    {  }
             else if ("+".equals(s))    { ops.push(s); }
-            else if ("-".equals(s))    { ops.push(s); }
-            else if ("*".equals(s))    { ops.push(s); }
-            else if ("/".equals(s))    { ops.push(s); }
-            else if ("sqrt".equals(s)) { ops.push(s); }
-            else if (")".equals(s)) {
+                 else if ("-".equals(s))    { ops.push(s); }
+                 else if ("*".equals(s))    { ops.push(s); }
+                 else if ("/".equals(s))    { ops.push(s); }
+                 else if ("sqrt".equals(s)) { ops.push(s); }
+                 else if (")".equals(s)) {
                 String op = ops.pop();
                 double v1 = val.pop();
                 double ans = 0;
                      if ("+".equals(op))    { ans = val.pop() + v1;val.push(ans); }
-                else if ("-".equals(op))    { ans = val.pop() - v1;val.push(ans); }
-                else if ("*".equals(op))    { ans = val.pop() * v1;val.push(ans); }
-                else if ("/".equals(op))    { ans = val.pop() / v1;val.push(ans); }
-                else if ("sqrt".equals(op)) { ans = Math.sqrt(v1) ;val.push(ans); }
+                     else if ("-".equals(op))    { ans = val.pop() - v1;val.push(ans); }
+                     else if ("*".equals(op))    { ans = val.pop() * v1;val.push(ans); }
+                     else if ("/".equals(op))    { ans = val.pop() / v1;val.push(ans); }
+                     else if ("sqrt".equals(op)) { ans = Math.sqrt(v1) ;val.push(ans); }
                      else                   { val.push(ans); }
             }
-            else { val.push(Double.parseDouble(s)); }
+                 else { val.push(Double.parseDouble(s)); }
         }
         System.out.println(val.pop());
     }
